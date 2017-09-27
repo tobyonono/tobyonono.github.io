@@ -1,0 +1,310 @@
+<doctype! html>
+	<html>
+		<head>
+			<title>Toby Onono</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		    <link href="https:////fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" media>	    
+		    <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">		   
+		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+		    <link href="main.css" rel="stylesheet" />
+		    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		</head>
+		<body>
+			<div class="grid">
+				<div class="header">
+					<ul>
+						<a href="#"><li class="active" id="about">01 _ABOUT</li></a>
+						<a href="#"><li id="projects">02 _PROJECTS</li></a>
+						<a href="#"><li id="mixes">03 _MIXES</li></a>
+						<a href="#"><li id="photos">04 _PHOTOS</li></a>
+					</ul>
+				</div>
+				<div class="middle">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" id="one">
+								<div class="sect1">
+									<div class="left">
+										<img src="img/blur.png">
+									</div>
+									<div class="right">
+										<div class="textblock">
+											<h2>Toby Onono</h2>
+											<h2>Trinity College Dublin Computer Science Graduate (BA Mod)</h2>
+											<h2>Web Developer</h2>
+											<br>
+											<a href="http://www.github.com/tobyonono"><span id="github">github</span></a>
+											<span>//</span>
+											<a href="https://www.linkedin.com/in/toby-onono-b3b4153b"><span id="linkedin">linkedin</span></a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="swiper-slide" id="two">
+								<div class="sect2">
+									<div class="sect2-col1">
+										<div>
+											<ul>
+												<a href="#"><li class="active2" id="ludo">01 _ludo</li></a>
+												<a href="#"><li id="keepappy">02 _keep appy</li></a>
+												<a href="#"><li id="pmlproject">03 _pml project</li></a>
+												<a href="#"><li id="currencyconverter">04 _currency converter</li></a>
+												<li>© 2017</li>
+											</ul>
+										</div>	
+									</div>
+									<div class="sect2-col2">
+										<div>
+											<p>Ludo is a simultaneous listening application developed using Spotify's web API.
+											It allows users to broadcast their sessions for other people to listen to and, in turn,
+											users are able to listen to other people who are currently broadcasting.</p>
+											<p>The app is developed using javascript and is currently deployed on heroku</p>
+
+										</div>
+										
+									</div>
+									<div class="sect2-col3">
+										<div class="proj-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="container">
+														<img src="https://media.giphy.com/media/3ohhwMd0aFfXRE9lV6/giphy.gif">
+														<!-- <img src="img/ludom.png"> -->
+													</div>
+													
+												</div>
+												<div class="swiper-slide">
+													<img src="img/red.png">
+													<img src="img/cmw.jpg">
+												</div>
+												<div class="swiper-slide">
+													<img src="img/red.png">
+													<img src="img/cmw.jpg">
+												</div>
+												<div class="swiper-slide">
+													<img src="img/red.png">
+													<img src="img/me.jpeg">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" id="three">
+								<div class="sect3">
+									<div class="sect3-col1">
+										<div>
+											<ul>
+												<a href="#"><li class="active3" id="rap">01 _rap</li></a>
+												<a href="#"><li id="r&b">02 _r&b</li></a>
+												<a href="#"><li id="electronic">03 _electronic</li></a>
+												<a href="#"><li id="other">04 _other</li></a>
+											</ul>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" id="four">
+								<img src="img/br.png">
+								<img src="img/jb.png">
+								<img src="img/mab.png">
+								<img src="img/pkr.png">
+								<img src="img/me.jpeg">
+								<img src="img/bsr.png">
+							</div>
+						</div>
+					</div> 
+				</div>
+					
+
+				</div>
+			</div>
+			<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+			<script>
+		    	var slidesPerView = 1;
+		    	var swiper = new Swiper('.swiper-container', {
+			        pagination: '.swiper-pagination',
+			        slidesPerView: slidesPerView,
+			        keyboardControl: true,
+			        centeredSlides: true,
+			        paginationClickable: true,
+			        onSlideChangeStart: function(swiper)
+			        {
+			        	slideNum = swiper.activeIndex;
+			        	navHighlight(slideNum);
+			        	console.log('it changed');
+			        },
+			        spaceBetween: 100,
+			        autoHeight: true,
+			        nextButton: '.swiper-button-next',
+			        prevButton: '.swiper-button-prev',
+		    	});
+
+
+			    $('#about').click(function(e) {
+				    e.preventDefault();
+				    $(".header .active").removeClass('active');
+				    $(this).addClass('active');
+				    swiper.slideTo(0,0,true);
+				    swiper.update(true);
+				});
+
+				$('#projects').click(function(e) {
+				    e.preventDefault();
+				    $(".header .active").removeClass('active');
+				    $(this).addClass('active');
+				    swiper.slideTo(1,0,true);
+				    swiper.update(true);
+				});
+
+				$('#mixes').click(function(e) {
+				    e.preventDefault();
+				    $(".header .active").removeClass('active');
+				    $(this).addClass('active');
+				    swiper.slideTo(2,0,true);
+				    swiper.update(true);
+				});
+
+				$('#photos').click(function(e) {
+				    e.preventDefault();
+				    $(".header .active").removeClass('active');
+				    $(this).addClass('active');
+				    swiper.slideTo(3,0,true);
+				    swiper.update(true);
+				});
+
+				function navHighlight(slideNum)
+				{
+					if(slideNum === 0)
+					{
+						$(".header .active").removeClass('active');
+						$('#about').addClass('active');
+						console.log('blah blah');
+					}
+
+					else if(slideNum === 1)
+					{
+						$(".header .active").removeClass('active');
+						$('#projects').addClass('active');
+					}
+
+					else if(slideNum === 2)
+					{
+						$(".header .active").removeClass('active');
+						$('#mixes').addClass('active');
+					}
+
+					else if(slideNum === 3)
+					{
+						$(".header .active").removeClass('active');
+						$('#photos').addClass('active');
+					}
+
+					swiper.update(true);
+				}
+
+				
+
+				var projswiper = new Swiper('.proj-container', {
+			        pagination: '.swiper-pagination',
+			        slidesPerView: 1,
+			        keyboardControl: true,
+			        //slidesPerColumn: 1,
+			        paginationClickable: true,
+			        onSlideChangeStart: function(swiper)
+			        {
+			        	var projNum = projswiper.activeIndex;
+			        	menuHighlight(projNum);
+			        },
+			        direction: 'vertical',
+			        spaceBetween: 40,
+			        autoHeight: true,
+			        speed: 1000,
+			        nextButton: '.swiper-button-next',
+			        prevButton: '.swiper-button-prev',
+		    	});
+
+		    	$('#ludo').click(function(e) {
+				    e.preventDefault();
+				    $(".sect2-col1 .active2").removeClass('active2');
+				    $(this).addClass('active2');
+				    projswiper.slideTo(0,1000,false);
+				    projswiper.update(true);
+				});
+
+		    	$('#keepappy').click(function(e) {
+				    e.preventDefault();
+				    $(".sect2-col1 .active2").removeClass('active2');
+				    $(this).addClass('active2');
+				    projswiper.slideTo(1,1000,false);
+				    projswiper.update(true);
+				});
+
+		    	$('#pmlproject').click(function(e) {
+				    e.preventDefault();
+				    $(".sect2-col1 .active2").removeClass('active2');
+				    $(this).addClass('active2');
+				    projswiper.slideTo(2,1000,false);
+				    projswiper.update(true);
+				});
+
+		    	$('#currencyconverter').click(function(e) {
+				    e.preventDefault();
+				    $(".sect2-col1 .active2").removeClass('active2');
+				    $(this).addClass('active2');
+				    projswiper.slideTo(3,1000,false);
+				    projswiper.update(true);
+				});
+
+				function menuHighlight(projNum)
+				{
+					if(projNum === 0)
+					{
+						$(".sect2-col1 .active2").removeClass('active2');
+						$('#ludo').addClass('active2');
+					}
+
+					else if(projNum === 1)
+					{
+						$(".sect2-col1 .active2").removeClass('active2');
+						$('#keepappy').addClass('active2');
+					}
+
+					else if(projNum === 2)
+					{
+						$(".sect2-col1 .active2").removeClass('active2');
+						$('#pmlproject').addClass('active2');
+					}
+
+					else if(projNum === 3)
+					{
+						$(".sect2-col1 .active2").removeClass('active2');
+						$('#currencyconverter').addClass('active2');
+					}
+
+					projswiper.update(true);
+				}
+
+		    	$(window).on( "load", function() {
+			        swiper.update(true);
+			        projswiper.update(true);
+			    });
+
+			    $(window).on( "resize", function() {
+			        swiper.update(true);
+			        projswiper.update(true);
+			    });
+
+
+
+
+		    	
+    		</script>
+		</body>
+	</html>
