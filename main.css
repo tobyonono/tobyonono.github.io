@@ -47,11 +47,15 @@ body
 	height: 100%;
 }
 
+
 .header
 {
 	grid-row: 1;
 	grid-column: 1;
+
 }
+
+
 
 a
 {
@@ -135,6 +139,12 @@ h2
 	text-transform: uppercase;	
 }
 
+h3
+{
+	font-size: 25px;
+	font-family: 'Monoton', sans-serif;
+}
+
 #github:hover
 {
 	color: #6e5494;
@@ -155,10 +165,17 @@ h2
 	width: 100%;
 }
 
+
+
 .left
 {
 	grid-column: 1;
 	grid-row: 1;
+}
+
+.left img
+{
+	max-width: 100%; 
 }
 
 .right
@@ -172,36 +189,7 @@ h2
 	justify-content: center;
 }
 
-.textblock
-{
-	
-}
 
-.swiper-slide
-{
-	overflow: hidden;
-	height: 100%;
-}
-
-.swiper-slide img
-{
-	max-width: 100%;
-	max-height: auto;
-	
-}
-
-#four
-{
-	background: black;
-	overflow: auto;
-	height: 100%;
-}
-
-#four img
-{
-	max-width: 55%;
-	height: auto;
-}
 
 .sect2
 {
@@ -261,11 +249,24 @@ h2
 
 }
 
-.sect2-col3 img
+.vertical
 {
-	max-height: 50%;
+	height: 100vh;
+}
+
+.vertical img
+{
+	max-height: 49%;
 	width: auto;
 }
+
+.pml img
+{
+	max-height: 70%;
+	width: auto;
+}
+
+
 
 .sect3
 {
@@ -296,6 +297,34 @@ h2
 	font-size: 8px;
 	font-weight: bold;
 
+}
+
+.sect4
+{
+	background: white;
+	overflow: auto;
+	height: 100vh;
+	width: 100%;
+}
+
+.sect4 img
+{
+	text-align: center;
+	max-width: 55%;
+	height: auto;
+	display: block;
+	margin: auto;
+	margin-top: 4%;
+}
+
+figcaption
+{
+	font-size: 10px;
+	text-transform: lowercase;
+	width: 50%;
+	padding-top: 2%;
+	text-align: center;
+	margin: 0 auto;
 }
 
 
